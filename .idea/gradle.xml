@@ -10,6 +10,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/custom_dialog" />
+            <option value="$PROJECT_DIR$/file_storage" />
+            <option value="$PROJECT_DIR$/list_image" />
+            <option value="$PROJECT_DIR$/magicindicator" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

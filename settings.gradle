@@ -22,3 +22,6 @@ dependencyResolutionManagement {
 rootProject.name = "AndroidGuide"
 include ':app'
 include ':custom_dialog'
+include ':list_image'
+include ':magicindicator'
+include ':file_storage'
