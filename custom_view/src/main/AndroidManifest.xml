@@ -9,6 +9,10 @@
         <activity
             android:name=".CustomViewActivity">
         </activity>
+        <activity android:name=".round.FilletImageActivity">
+        </activity>
+        <activity android:name=".circle.CircleActionActivity">
+        </activity>
     </application>
 
 </manifest>
