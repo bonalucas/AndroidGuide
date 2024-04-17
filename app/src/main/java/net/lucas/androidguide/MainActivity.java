@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import net.lucas.custom_dialog.DemoDialogActivity;
+import net.lucas.custom_view.CustomViewActivity;
 import net.lucas.file_storage.FileStorageActivity;
 import net.lucas.list_image.ListImageActivity;
 
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         custom_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CustomViewActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="url" format="string" />
+        <attr name="angle" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="GlideRoundImageView">
+        <attr name="radius" format="integer" />
+        <attr name="resource" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomRoundImageView">
+        <attr name="roundPx" format="integer" />
+        <attr name="picture" format="string" />
+    </declare-styleable>
+
+</resources>

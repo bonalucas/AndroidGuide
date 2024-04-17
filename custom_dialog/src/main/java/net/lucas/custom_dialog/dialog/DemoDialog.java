@@ -16,9 +16,6 @@ import androidx.core.content.ContextCompat;
 
 import net.lucas.custom_dialog.R;
 
-/**
- * 自定义对话框
- */
 public class DemoDialog {
 
     private Context context;

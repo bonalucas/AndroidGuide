@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆角图片实现方式1"
+        android:textSize="20sp"
+        />
+
+    <net.lucas.custom_view.round.RoundImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:url="https://seopic.699pic.com/photo/50135/8221.jpg_wh1200.jpg"
+        app:angle="100">
+    </net.lucas.custom_view.round.RoundImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆角图片实现方式2"
+        android:textSize="20sp"
+        />
+
+    <net.lucas.custom_view.round.GlideRoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:resource="https://seopic.699pic.com/photo/50135/8221.jpg_wh1200.jpg"
+        app:radius="200">
+    </net.lucas.custom_view.round.GlideRoundImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="圆角图片实现方式3"
+        android:textSize="20sp"
+        />
+
+    <net.lucas.custom_view.round.CustomRoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        app:picture="https://seopic.699pic.com/photo/50135/8221.jpg_wh1200.jpg"
+        app:roundPx="100">
+    </net.lucas.custom_view.round.CustomRoundImageView>
+
+</LinearLayout>
