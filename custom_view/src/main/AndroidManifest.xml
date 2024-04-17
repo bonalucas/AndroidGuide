@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,8 @@
         <activity android:name=".round.FilletImageActivity">
         </activity>
         <activity android:name=".circle.CircleActionActivity">
+        </activity>
+        <activity android:name=".longpress.LongPressActionActivity">
         </activity>
     </application>
 

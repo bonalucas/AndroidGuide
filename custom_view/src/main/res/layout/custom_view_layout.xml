@@ -26,4 +26,15 @@
         android:text="circle_action"
         />
 
+    <Button
+        android:id="@+id/long_press_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fillet_image_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="long_press_action"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

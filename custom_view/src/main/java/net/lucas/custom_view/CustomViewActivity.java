@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 
 import net.lucas.custom_view.circle.CircleActionActivity;
 import net.lucas.custom_view.circle.CircleActionView;
+import net.lucas.custom_view.longpress.LongPressActionActivity;
 import net.lucas.custom_view.round.FilletImageActivity;
 import net.lucas.custom_view.round.GlideCornersTransformation;
 
@@ -37,6 +38,15 @@ public class CustomViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CustomViewActivity.this, CircleActionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button long_press_action_button = findViewById(R.id.long_press_action_button);
+        long_press_action_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomViewActivity.this, LongPressActionActivity.class);
                 startActivity(intent);
             }
         });
