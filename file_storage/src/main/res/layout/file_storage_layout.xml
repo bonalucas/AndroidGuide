@@ -40,7 +40,7 @@
             android:id="@+id/store_inside"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="store_inside"
+            android:text="内部存储"
             android:textAllCaps="true"
             android:layout_weight="1"
             />
@@ -49,7 +49,7 @@
             android:id="@+id/store_sd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="store_sd"
+            android:text="外部SD卡存储"
             android:textAllCaps="true"
             android:layout_weight="1"
             />
@@ -58,7 +58,7 @@
             android:id="@+id/store_outside"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="store_outside"
+            android:text="外部私有存储"
             android:textAllCaps="true"
             android:layout_weight="1"
             />

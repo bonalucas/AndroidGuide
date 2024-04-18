@@ -16,6 +16,8 @@
         </activity>
         <activity android:name=".longpress.LongPressActionActivity">
         </activity>
+        <activity android:name=".download.DownloadProgressActivity">
+        </activity>
     </application>
 
 </manifest>

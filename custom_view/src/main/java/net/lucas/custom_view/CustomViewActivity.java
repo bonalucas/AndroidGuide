@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 
 import net.lucas.custom_view.circle.CircleActionActivity;
 import net.lucas.custom_view.circle.CircleActionView;
+import net.lucas.custom_view.download.DownloadProgressActivity;
 import net.lucas.custom_view.longpress.LongPressActionActivity;
 import net.lucas.custom_view.round.FilletImageActivity;
 import net.lucas.custom_view.round.GlideCornersTransformation;
@@ -47,6 +48,15 @@ public class CustomViewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CustomViewActivity.this, LongPressActionActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button download_progress_button = findViewById(R.id.download_progress_button);
+        download_progress_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CustomViewActivity.this, DownloadProgressActivity.class);
                 startActivity(intent);
             }
         });
