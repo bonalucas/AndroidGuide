@@ -1,6 +1,5 @@
 package net.lucas.custom_view.round;
 
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;

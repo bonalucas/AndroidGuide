@@ -12,8 +12,6 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.graphics.Shader;
-import android.os.Parcel;
-import android.os.Parcelable;
 import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;

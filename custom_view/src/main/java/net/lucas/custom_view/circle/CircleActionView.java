@@ -70,7 +70,7 @@ public class CircleActionView extends View {
                     animator.addListener(new AnimatorListenerAdapter() {
                         @Override
                         public void onAnimationEnd(Animator animation) {
-                            circle.setRadius(0);
+                            circleList.remove(circle);
                             invalidate();
                         }
                     });

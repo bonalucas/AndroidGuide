@@ -13,7 +13,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-
 import net.lucas.list_image.fragment.FirstFragment;
 import net.lucas.list_image.fragment.SecondFragment;
 import net.lucas.list_image.fragment.ThirdFragment;
