@@ -24,6 +24,7 @@ public class DragViewActivity extends AppCompatActivity {
                 Toast.makeText(DragViewActivity.this, "click button", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
 }

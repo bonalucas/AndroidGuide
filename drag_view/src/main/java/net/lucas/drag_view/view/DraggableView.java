@@ -48,8 +48,6 @@ public class DraggableView extends ViewGroup {
         if (this.isEnabled()) {
             // 处理拖动操作
             drag(event);
-            // 当返回的是 true 或 false 时都无法调用到 onClick
-            // 当返回的是 super.dispatchTouchEvent(event) 时能够调用到 onCLick
             return super.dispatchTouchEvent(event);
         }
         return false;
@@ -57,20 +55,18 @@ public class DraggableView extends ViewGroup {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        // 当返回的是 false 或 super.onInterceptTouchEvent(ev) 时，能够执行到 onClick
-        // 当返回的是 true 时，不能够执行到 onClick
-        return super.onInterceptTouchEvent(ev);
-    }
-
-
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        super.onTouchEvent(event);
-        if (this.isEnabled()) {
-            drag(event);
-            return true;
+        boolean isIntercept = false;
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+            case MotionEvent.ACTION_UP:
+                break;
+            // 拦截移动事件 button不需要处理移动事件
+            case MotionEvent.ACTION_MOVE:
+                isIntercept = true;
+                break;
         }
-        return false;
+        super.onInterceptTouchEvent(ev);
+        return isIntercept;
     }
 
     private void drag(MotionEvent event) {
