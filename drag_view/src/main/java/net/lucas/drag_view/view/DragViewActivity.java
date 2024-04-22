@@ -1,4 +1,4 @@
-package net.lucas.drag_view;
+package net.lucas.drag_view.view;
 
 import android.os.Bundle;
 import android.view.View;
@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import net.lucas.drag_view.view.DraggableView;
+import net.lucas.drag_view.R;
 
 public class DragViewActivity extends AppCompatActivity {
 

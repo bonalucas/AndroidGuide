@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import net.lucas.custom_dialog.DemoDialogActivity;
 import net.lucas.custom_view.CustomViewActivity;
-import net.lucas.drag_view.DragViewActivity;
+import net.lucas.drag_view.EventActivity;
 import net.lucas.file_storage.FileStorageActivity;
 import net.lucas.list_image.ListImageActivity;
 
@@ -55,11 +55,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button drag_view = findViewById(R.id.drag_view);
-        drag_view.setOnClickListener(new View.OnClickListener() {
+        Button event_dispatch = findViewById(R.id.event_dispatch);
+        event_dispatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, DragViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, EventActivity.class);
                 startActivity(intent);
             }
         });
