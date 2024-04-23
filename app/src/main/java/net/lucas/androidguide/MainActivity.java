@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import net.lucas.custom_dialog.DemoDialogActivity;
 import net.lucas.custom_view.CustomViewActivity;
+import net.lucas.download_service.DownloadActivity;
 import net.lucas.drag_view.EventActivity;
 import net.lucas.file_storage.FileStorageActivity;
 import net.lucas.list_image.ListImageActivity;
@@ -60,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, EventActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button download_service = findViewById(R.id.download_service);
+        download_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DownloadActivity.class);
                 startActivity(intent);
             }
         });

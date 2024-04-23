@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DownloadProgressButton">
+        <!-- 按钮边框宽度 -->
+        <attr name="progress_btn_border_width" format="dimension" />
+        <!-- 按钮圆角度 -->
+        <attr name="progress_btn_radius" format="dimension" />
+        <!-- 按钮背景底色 -->
+        <attr name="progress_btn_background_color" format="color" />
+        <!-- 开始下载后按钮背景底色 -->
+        <attr name="progress_btn_background_download_color" format="color" />
+        <!-- 按钮文本颜色 -->
+        <attr name="progress_btn_text_color" format="color" />
+        <!-- 下载覆盖文本时的文本颜色 -->
+        <attr name="progress_btn_text_cover_color" format="color" />
+    </declare-styleable>
+
+</resources>
