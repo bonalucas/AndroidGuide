@@ -13,6 +13,7 @@ import net.lucas.download_service.DownloadActivity;
 import net.lucas.drag_view.EventActivity;
 import net.lucas.file_storage.FileStorageActivity;
 import net.lucas.list_image.ListImageActivity;
+import net.lucas.other.OtherKNActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -73,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button other = findViewById(R.id.other);
+        other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, OtherKNActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 }

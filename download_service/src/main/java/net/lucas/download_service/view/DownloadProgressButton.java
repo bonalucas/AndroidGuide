@@ -364,13 +364,14 @@ public class DownloadProgressButton extends AppCompatButton {
         if (progress >= mMinProgress && progress <= mMaxProgress) {
             DecimalFormat format = new DecimalFormat("##0.0");
             mCurrentText = text + format.format(progress) + "%";
-            mToProgress = progress;
-            if (mProgressAnimation.isRunning()) {
+            mProgress = progress;
+/*            if (mProgressAnimation.isRunning()) {
                 mProgressAnimation.resume();
                 mProgressAnimation.start();
             } else {
                 mProgressAnimation.start();
-            }
+            }*/
+            invalidate();
         } else if (progress < mMinProgress) {
             mProgress = 0;
         } else if (progress > mMaxProgress) {

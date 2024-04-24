@@ -50,6 +50,7 @@ public class ParentRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView
                             ((ChildViewHolder) holder).recyclerView.getParent().requestDisallowInterceptTouchEvent(true);
                             break;
                         case MotionEvent.ACTION_UP:
+                        case MotionEvent.ACTION_CANCEL:
                             ((ChildViewHolder) holder).recyclerView.getParent().requestDisallowInterceptTouchEvent(false);
                             break;
                     }
