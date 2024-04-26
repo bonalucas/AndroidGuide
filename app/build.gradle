@@ -27,6 +27,39 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    // 配置渠道的签名信息（signingConfigs 必须在 productFlavors 前面声明）
+//    signingConfigs {
+//        origin {
+//            keyAlias 'GenerateAPK'
+//            keyPassword '123456'
+//            storeFile file('../../GenerateAPK.jks')
+//            storePassword '123456'
+//        }
+//
+//        example {
+//            keyAlias 'example'
+//            keyPassword '123456'
+//            storeFile file('../../keys/example.jks')
+//            storePassword '123456'
+//        }
+//    }
+//
+//    getFlavorDimensionList().add('example')
+//
+//    productFlavors {
+//        origin {
+//            dimension "example"
+//        }
+//
+//        example {
+//            dimension "example"
+//            applicationId "com.lucas.example"
+//            versionCode 2
+//            versionName "1.0.0-flavor"
+//        }
+//    }
+
 }
 
 dependencies {
@@ -53,5 +86,6 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
     implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
 
 }
